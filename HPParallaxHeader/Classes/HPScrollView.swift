@@ -176,7 +176,7 @@ extension HPScrollView {
             } else if contentOffset.y < -contentInset.top && !bounces {
                 self.scrollView(self, setContentOffset: CGPoint(x: contentOffset.x,
                                                                 y: -contentInset.top))
-            } else if contentOffset.y > -ceil(parallaxHeader.minimumHeight) {
+            } else if contentOffset.y > -parallaxHeader.minimumHeight {
                 self.scrollView(self, setContentOffset: CGPoint(x: contentOffset.x,
                                                                 y: -parallaxHeader.minimumHeight))
             }
