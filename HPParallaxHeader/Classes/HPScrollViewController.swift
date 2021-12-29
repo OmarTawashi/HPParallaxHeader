@@ -118,7 +118,7 @@ open class HPScrollViewController: UIViewController {
     weak var childHeightConstraint: NSLayoutConstraint?
     
     
-    override public func viewDidLoad() {
+    open override  func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -147,7 +147,7 @@ open class HPScrollViewController: UIViewController {
         }
     }
     
-    public override func viewDidAppear(_ animated: Bool) {
+    open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         if #available(iOS 11.0, *) {
